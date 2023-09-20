@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music|Player</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="static/libs/fontawesome-5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/Style.css">
+
+</head>
+<body>
+    <audio src="static/music/y2mate.com - En Tierra de Hadas Celtian Letra.mp3"></audio>
+    <div class="wrapper">
+        <div class="content">
+            <div class="img-container">
+                <img src="static/img/Cover.jpg" alt="" srcset="">
+            </div>
+            <div class="timeline">
+                <span id="curr-min">00</span>:<span id="curr-seg">00</span>
+                <input type="range" name="" id="timeline" value="0">
+                <span id="dur-min">00</span>:<span id="dur-seg">00</span>
+            </div>
+            <div class="track-info">
+                <div class="track-name">
+                    <h3>En Tierra de Hadas</h3>
+                </div>
+                <div class="track-artist">
+                    Celtian
+                </div>
+            </div>
+            <div class="controls">
+                <div class="btn disabled" id="loop">
+                    <i class="fas fa-repeat"></i>
+                </div>
+                <div class="btn" id="backward-5">
+                    <i class="fas fa-backward-step"></i>
+                </div>
+                <div class="play-btn">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="btn" id="forward-5">
+                    <i class="fas fa-forward-step"></i>
+                </div>
+                <div class="btn disabled">
+                    <i class="fas fa-shuffle"></i>
+                </div>
+
+            </div>
+            <div class="option-menu">
+                <div class="volume-control">
+                    <div class="btn" id="mute-btn">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <input value="100"  type="range" name="" id="volume-lvl">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="static/js/Main.js"></script>
+</body>
+</html>
